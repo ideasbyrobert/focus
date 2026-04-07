@@ -20,13 +20,20 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
   - guide
   - reference
 - system
-  - load-balance
-  - rate-limit
-  - cache
-  - queue
-  - replica
-  - event-source
-  - saga
+  - mechanism
+      - latency
+      - throughput
+      - concurrency
+  - pattern
+      - load-balance
+      - rate-limit
+      - colocate
+      - replicate
+      - partition
+      - cache
+      - queue
+      - event-source
+      - saga
 - algorithm
   - array
   - string
@@ -34,7 +41,7 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
   - hash-map
   - tree
   - graph
-  - dynamics
+  - dynamic
   - recursion
 
 ## references
