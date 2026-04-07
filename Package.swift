@@ -23,7 +23,7 @@ let package = Package(
             dependencies: ["CodeTour"],
             path: "Tests/code/tour",
             resources: [
-                .copy("Fixtures"),
+                .copy("_support/Fixtures"),
             ]
         ),
     ],

@@ -21,7 +21,17 @@ final class CompileFailureFixturesTests: XCTestCase
 
     private func fixtureDirectories() throws -> [URL]
     {
-        let fixturesRoot = try XCTUnwrap(Bundle.module.resourceURL?.appendingPathComponent("Fixtures"))
+        let resourceRoot = try XCTUnwrap(Bundle.module.resourceURL)
+        let candidates = [
+            resourceRoot.appendingPathComponent("_support/Fixtures"),
+            resourceRoot.appendingPathComponent("Fixtures"),
+        ]
+        let fixturesRoot = try XCTUnwrap(
+            candidates.first
+            {
+                FileManager.default.fileExists(atPath: $0.path)
+            }
+        )
         let urls = try FileManager.default.contentsOfDirectory(
             at: fixturesRoot,
             includingPropertiesForKeys: nil
