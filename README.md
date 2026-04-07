@@ -36,3 +36,9 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 
 - [Swift](https://www.swift.org/install/)
 - [Make](https://www.gnu.org/software/make/)
+
+## references
+
+- [Xcode Documentation](https://developer.apple.com/documentation/xcode)
+- [Swift Book Style Guide](https://github.com/swiftlang/swift-book/blob/main/Style.md)
+- [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language)
