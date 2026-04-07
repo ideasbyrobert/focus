@@ -18,7 +18,7 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 
 ## contents
 
-- language
+- code
   - tour
   - guide
   - reference
