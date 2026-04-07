@@ -32,8 +32,6 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
       - partition
       - cache
       - queue
-      - event-source
-      - saga
 - algorithm
   - array
   - string
