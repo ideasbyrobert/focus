@@ -52,11 +52,15 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 - [Apple Container](https://github.com/apple/container)
 - [Apple Containerization](https://github.com/apple/containerization)
 
-
 ### vapor
 
 - [Web Framework](https://docs.vapor.codes)
 - [RediStack](https://docs.vapor.codes/redis/overview/) 
 - [PostgresNIO](https://api.vapor.codes/postgresnio/documentation/postgresnio/)
 - [ORM](https://docs.vapor.codes/fluent/overview/)
+
+### proposal 
+
+- [Swift Http API Proposal](https://github.com/apple/swift-http-api-proposal)
+
 
