@@ -48,7 +48,7 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
       - cache
       - queue
       
-## references
+## reference
 
 ### core
 
@@ -66,6 +66,12 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 
 - [Apple Container](https://github.com/apple/container)
 
+### preview 
+
+- [Swift Http API Proposal](https://github.com/apple/swift-http-api-proposal)
+
+- [Distributed Actors](https://github.com/apple/swift-distributed-actors) 
+
 ### vapor
 
 - [Web Framework](https://docs.vapor.codes)
@@ -75,11 +81,5 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 - [PostgresNIO](https://api.vapor.codes/postgresnio/documentation/postgresnio/)
 
 - [ORM](https://docs.vapor.codes/fluent/overview/)
-
-### preview 
-
-- [Swift Http API Proposal](https://github.com/apple/swift-http-api-proposal)
-
-- [Distributed Actors](https://github.com/apple/swift-distributed-actors) 
 
 
