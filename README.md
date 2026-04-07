@@ -20,6 +20,20 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
   - tour
   - guide
   - reference
+- algorithm
+  - mechanism
+    - array
+    - set
+    - node
+    - map
+    - tree
+    - graph
+ - pattern
+    - iterative
+    - greedy
+    - recursive 
+    - backtracking 
+    - linear
 - system
   - mechanism
       - latency
@@ -33,16 +47,7 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
       - partition
       - cache
       - queue
-- algorithm
-  - array
-  - string
-  - linked-list
-  - hash-map
-  - tree
-  - graph
-  - dynamic
-  - recursion
-
+      
 ## references
 
 ### core
