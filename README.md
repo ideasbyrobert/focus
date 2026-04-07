@@ -47,12 +47,14 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 ### core
 
 - [Xcode Documentation](https://developer.apple.com/documentation/xcode)
+
 - [Swift Book Style Guide](https://github.com/swiftlang/swift-book/blob/main/Style.md)
 - [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language)
+
 - [Swift on Server](https://www.swift.org/documentation/server/)
 - [SwiftData](https://developer.apple.com/documentation/swiftdata)
 - [FoundationDB](https://apple.github.io/foundationdb/)
-- [Distributed Actors](https://github.com/apple/swift-distributed-actors) 
+
 - [Apple Container](https://github.com/apple/container)
 
 ### vapor
@@ -62,8 +64,9 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 - [PostgresNIO](https://api.vapor.codes/postgresnio/documentation/postgresnio/)
 - [ORM](https://docs.vapor.codes/fluent/overview/)
 
-### proposal 
+### preview 
 
 - [Swift Http API Proposal](https://github.com/apple/swift-http-api-proposal)
+- [Distributed Actors](https://github.com/apple/swift-distributed-actors) 
 
 
