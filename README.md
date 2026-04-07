@@ -1,5 +1,18 @@
 # focus
 
+## setup
+
+- [Swift](https://www.swift.org/install/)
+- [Make](https://www.gnu.org/software/make/)
+
+## run
+
+```bash
+make test
+make test-class CLASS=ControlFlowTests
+make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
+```
+
 ## contents
 
 - code
@@ -23,19 +36,6 @@
   - graph
   - dynamics
   - recursion
-
-## tests
-
-```bash
-make test
-make test-class CLASS=ControlFlowTests
-make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
-```
-
-## downloads
-
-- [Swift](https://www.swift.org/install/)
-- [Make](https://www.gnu.org/software/make/)
 
 ## references
 
