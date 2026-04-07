@@ -10,7 +10,9 @@
 
 ```bash
 make test
+
 make test-class CLASS=ControlFlowTests
+
 make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 ```
 
