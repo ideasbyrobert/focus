@@ -28,7 +28,7 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
     - map
     - tree
     - graph
- - pattern
+  - pattern
     - iterative
     - greedy
     - recursive 
