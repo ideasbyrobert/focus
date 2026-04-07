@@ -39,6 +39,8 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 
 ## references
 
+### core
+
 - [Xcode Documentation](https://developer.apple.com/documentation/xcode)
 - [Swift Book Style Guide](https://github.com/swiftlang/swift-book/blob/main/Style.md)
 - [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language)
@@ -46,5 +48,15 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 - [Core Data](https://developer.apple.com/documentation/CoreData)
 - [SwiftData](https://developer.apple.com/documentation/swiftdata)
 - [FoundationDB](https://apple.github.io/foundationdb/)
+- [Distributed Actors](https://github.com/apple/swift-distributed-actors) 
 - [Apple Container](https://github.com/apple/container)
 - [Apple Containerization](https://github.com/apple/containerization)
+
+
+### vapor
+
+- [Web Framework](https://docs.vapor.codes)
+- [RediStack](https://docs.vapor.codes/redis/overview/) 
+- [PostgresNIO](https://api.vapor.codes/postgresnio/documentation/postgresnio/)
+- [ORM](https://docs.vapor.codes/fluent/overview/)
+
