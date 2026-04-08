@@ -11,10 +11,6 @@
 ```bash
 make test
 
-make test CLASS=ControlFlowTests
-
-make test CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
-
 make test CLASS=FindWinnerOnTicTacToeTests
 
 make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
