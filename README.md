@@ -11,13 +11,13 @@
 ```bash
 make test
 
-make test-class CLASS=ControlFlowTests
+make test CLASS=ControlFlowTests
 
-make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
+make test CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 
-make test-class CLASS=FindWinnerOnTicTacToeTests
+make test CLASS=FindWinnerOnTicTacToeTests
 
-make test-case CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
+make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
 ```
 
 ## contents

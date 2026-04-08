@@ -2,14 +2,10 @@ TEST_COMMAND := swift test --disable-swift-testing
 TEST_LIST_COMMAND := $(TEST_COMMAND) list
 TEST_TARGET_FILTER := $(if $(strip $(TARGET)),--filter "^$(TARGET)\\.",)
 
-TEST_CLASS_USAGE := Usage: make test-class CLASS=ControlFlowTests
-TEST_CASE_USAGE := Usage: make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
-TEST_CLASS_REJECTION := TEST is not supported with test-class. Use: make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
+TEST_USAGE := Usage: make test [CLASS=ControlFlowTests] [TEST=testLoopExamplesMatchTheGuidedTour]
+TEST_REQUIRES_CLASS := TEST requires CLASS. Use: make test CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 
-REQUIRE_TEST_CLASS_CLASS = @test -n "$(CLASS)" || (echo "$(TEST_CLASS_USAGE)" >&2; exit 1)
-REQUIRE_TEST_CASE_CLASS = @test -n "$(CLASS)" || (echo "$(TEST_CASE_USAGE)" >&2; exit 1)
-REQUIRE_TEST_CASE_TEST = @test -n "$(TEST)" || (echo "$(TEST_CASE_USAGE)" >&2; exit 1)
-REJECT_TEST_FOR_TEST_CLASS = @test -z "$(TEST)" || (echo "$(TEST_CLASS_REJECTION)" >&2; exit 1)
+REQUIRE_CLASS_FOR_TEST = @test -n "$(CLASS)" || (echo "$(TEST_REQUIRES_CLASS)" >&2; exit 1)
 
 LOAD_TEST_LIST = \
 	TEST_LIST="$$( $(TEST_LIST_COMMAND) )"; \
@@ -41,22 +37,20 @@ RESOLVE_TEST_SPECIFIER = \
 		exit 1; \
 	}
 
-.PHONY: test test-class test-case
+.PHONY: test
 
 test:
+ifneq ($(strip $(CLASS)),)
+	@$(LOAD_TEST_LIST); \
+	$(RESOLVE_CLASS_SPECIFIER); \
+	if [ -n "$(TEST)" ]; then \
+		$(RESOLVE_TEST_SPECIFIER); \
+		$(TEST_COMMAND) --filter "$$TEST_SPECIFIER"; \
+	else \
+		$(TEST_COMMAND) --filter "$$CLASS_SPECIFIER"; \
+	fi
+else ifneq ($(strip $(TEST)),)
+	$(REQUIRE_CLASS_FOR_TEST)
+else
 	$(TEST_COMMAND) $(TEST_TARGET_FILTER)
-
-test-class:
-	$(REQUIRE_TEST_CLASS_CLASS)
-	$(REJECT_TEST_FOR_TEST_CLASS)
-	@$(LOAD_TEST_LIST); \
-	$(RESOLVE_CLASS_SPECIFIER); \
-	$(TEST_COMMAND) --filter "$$CLASS_SPECIFIER"
-
-test-case:
-	$(REQUIRE_TEST_CASE_CLASS)
-	$(REQUIRE_TEST_CASE_TEST)
-	@$(LOAD_TEST_LIST); \
-	$(RESOLVE_CLASS_SPECIFIER); \
-	$(RESOLVE_TEST_SPECIFIER); \
-	$(TEST_COMMAND) --filter "$$TEST_SPECIFIER"
+endif
