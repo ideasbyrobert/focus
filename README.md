@@ -30,11 +30,12 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - 08-error-handling
     - 09-generics
 - algorithm
-  - array
-    - 01-in-place-transformation
-    - 02-parsing-and-transformation
-    - 03-matrix-traversal
-    - 04-math-fluency
+  - mechanism
+    - array
+      - 01-in-place-transformation
+      - 02-parsing-and-transformation
+      - 03-matrix-traversal
+      - 04-math-fluency
       
 ## reference
 

@@ -24,7 +24,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmArray",
-            path: "Sources/algorithm/array"
+            path: "Sources/algorithm/mechanism/array"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -37,7 +37,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmArrayTests",
             dependencies: ["AlgorithmArray"],
-            path: "Tests/algorithm/array"
+            path: "Tests/algorithm/mechanism/array"
         ),
     ],
     swiftLanguageModes: [.v6]
