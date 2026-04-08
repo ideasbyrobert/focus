@@ -14,6 +14,10 @@ make test
 make test-class CLASS=ControlFlowTests
 
 make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
+
+make test-class CLASS=FindWinnerOnTicTacToeTests
+
+make test-case CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
 ```
 
 ## contents
@@ -23,19 +27,11 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
   - guide
   - reference
 - algorithm
-  - mechanism
-    - array
-    - set
-    - node
-    - map
-    - tree
-    - graph
-  - pattern
-    - iterative
-    - greedy
-    - recursive 
-    - backtracking 
-    - linear
+  - array
+    - 01-in-place-transformation
+    - 02-parsing-and-transformation
+    - 03-matrix-traversal
+    - 04-math-fluency
 - system
   - mechanism
       - latency
@@ -83,5 +79,3 @@ make test-case CLASS=ControlFlowTests TEST=testLoopExamplesMatchTheGuidedTour
 - [PostgresNIO](https://api.vapor.codes/postgresnio/documentation/postgresnio/)
 
 - [ORM](https://docs.vapor.codes/fluent/overview/)
-
-

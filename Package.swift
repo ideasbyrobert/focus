@@ -12,11 +12,19 @@ let package = Package(
             name: "CodeTour",
             targets: ["CodeTour"]
         ),
+        .library(
+            name: "AlgorithmArray",
+            targets: ["AlgorithmArray"]
+        ),
     ],
     targets: [
         .target(
             name: "CodeTour",
             path: "Sources/code/tour"
+        ),
+        .target(
+            name: "AlgorithmArray",
+            path: "Sources/algorithm/array"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -25,6 +33,11 @@ let package = Package(
             resources: [
                 .copy("_support/Fixtures"),
             ]
+        ),
+        .testTarget(
+            name: "AlgorithmArrayTests",
+            dependencies: ["AlgorithmArray"],
+            path: "Tests/algorithm/array"
         ),
     ],
     swiftLanguageModes: [.v6]
