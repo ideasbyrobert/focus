@@ -20,27 +20,21 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
 
 - code
   - tour
-  - guide
-  - reference
+    - 01-simple-values
+    - 02-control-flow
+    - 03-functions-and-closures
+    - 04-objects-and-classes
+    - 05-enumerations-and-structures
+    - 06-concurrency
+    - 07-protocols-and-extensions
+    - 08-error-handling
+    - 09-generics
 - algorithm
   - array
     - 01-in-place-transformation
     - 02-parsing-and-transformation
     - 03-matrix-traversal
     - 04-math-fluency
-- system
-  - mechanism
-      - latency
-      - throughput
-      - concurrency
-  - pattern
-      - load-balance
-      - rate-limit
-      - colocate
-      - replicate
-      - partition
-      - cache
-      - queue
       
 ## reference
 
