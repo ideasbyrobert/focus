@@ -20,6 +20,10 @@ let package = Package(
             name: "AlgorithmArray",
             targets: ["AlgorithmArray"]
         ),
+        .library(
+            name: "AlgorithmLinkedList",
+            targets: ["AlgorithmLinkedList"]
+        ),
     ],
     targets: [
         .target(
@@ -33,6 +37,10 @@ let package = Package(
         .target(
             name: "AlgorithmArray",
             path: "Sources/algorithm/mechanism/array"
+        ),
+        .target(
+            name: "AlgorithmLinkedList",
+            path: "Sources/algorithm/mechanism/linked-list"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -54,6 +62,11 @@ let package = Package(
             name: "AlgorithmArrayTests",
             dependencies: ["AlgorithmArray"],
             path: "Tests/algorithm/mechanism/array"
+        ),
+        .testTarget(
+            name: "AlgorithmLinkedListTests",
+            dependencies: ["AlgorithmLinkedList"],
+            path: "Tests/algorithm/mechanism/linked-list"
         ),
     ],
     swiftLanguageModes: [.v6]
