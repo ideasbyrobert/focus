@@ -59,6 +59,10 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 01-lifo
       - 02-fifo
       - 03-mono
+    - tree
+      - 01-binary
+      - 02-binary-search
+      - 03-trie
   - pattern
     - sort-and-two-pointer
     - sort-and-interval

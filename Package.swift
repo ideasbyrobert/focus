@@ -33,6 +33,10 @@ let package = Package(
             targets: ["AlgorithmStackAndQueue"]
         ),
         .library(
+            name: "AlgorithmTree",
+            targets: ["AlgorithmTree"]
+        ),
+        .library(
             name: "AlgorithmSortAndTwoPointer",
             targets: ["AlgorithmSortAndTwoPointer"]
         ),
@@ -69,6 +73,10 @@ let package = Package(
         .target(
             name: "AlgorithmStackAndQueue",
             path: "Sources/algorithm/mechanism/stack-and-queue"
+        ),
+        .target(
+            name: "AlgorithmTree",
+            path: "Sources/algorithm/mechanism/tree"
         ),
         .target(
             name: "AlgorithmSortAndTwoPointer",
@@ -117,6 +125,11 @@ let package = Package(
             name: "AlgorithmStackAndQueueTests",
             dependencies: ["AlgorithmStackAndQueue"],
             path: "Tests/algorithm/mechanism/stack-and-queue"
+        ),
+        .testTarget(
+            name: "AlgorithmTreeTests",
+            dependencies: ["AlgorithmTree"],
+            path: "Tests/algorithm/mechanism/tree"
         ),
         .testTarget(
             name: "AlgorithmSortAndTwoPointerTests",
