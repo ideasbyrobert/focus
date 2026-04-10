@@ -57,8 +57,8 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - stack
     - queue
     - tree
-      - 01-binary
-      - 02-binary-search
+      - 01-binary-tree
+      - 02-binary-search-tree
       - 03-trie
     - graph
       - 01-traversal
