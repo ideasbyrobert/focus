@@ -55,15 +55,14 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 04-math-fluency
     - linked-list
     - hash-map
-    - stack-and-queue
-      - 01-lifo
-      - 02-fifo
-      - 03-mono
+    - stack
+    - queue
     - tree
       - 01-binary
       - 02-binary-search
       - 03-trie
   - pattern
+    - monotonic-stack
     - sorting-and-two-pointer
     - sorting-and-interval
     - prefix-sum

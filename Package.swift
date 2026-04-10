@@ -29,12 +29,20 @@ let package = Package(
             targets: ["AlgorithmHashMap"]
         ),
         .library(
-            name: "AlgorithmStackAndQueue",
-            targets: ["AlgorithmStackAndQueue"]
+            name: "AlgorithmStack",
+            targets: ["AlgorithmStack"]
+        ),
+        .library(
+            name: "AlgorithmQueue",
+            targets: ["AlgorithmQueue"]
         ),
         .library(
             name: "AlgorithmTree",
             targets: ["AlgorithmTree"]
+        ),
+        .library(
+            name: "AlgorithmMonotonicStack",
+            targets: ["AlgorithmMonotonicStack"]
         ),
         .library(
             name: "AlgorithmSortingAndTwoPointer",
@@ -83,12 +91,20 @@ let package = Package(
             path: "Sources/algorithm/mechanism/hash-map"
         ),
         .target(
-            name: "AlgorithmStackAndQueue",
-            path: "Sources/algorithm/mechanism/stack-and-queue"
+            name: "AlgorithmStack",
+            path: "Sources/algorithm/mechanism/stack"
+        ),
+        .target(
+            name: "AlgorithmQueue",
+            path: "Sources/algorithm/mechanism/queue"
         ),
         .target(
             name: "AlgorithmTree",
             path: "Sources/algorithm/mechanism/tree"
+        ),
+        .target(
+            name: "AlgorithmMonotonicStack",
+            path: "Sources/algorithm/pattern/monotonic-stack"
         ),
         .target(
             name: "AlgorithmSortingAndTwoPointer",
@@ -146,14 +162,24 @@ let package = Package(
             path: "Tests/algorithm/mechanism/hash-map"
         ),
         .testTarget(
-            name: "AlgorithmStackAndQueueTests",
-            dependencies: ["AlgorithmStackAndQueue"],
-            path: "Tests/algorithm/mechanism/stack-and-queue"
+            name: "AlgorithmStackTests",
+            dependencies: ["AlgorithmStack"],
+            path: "Tests/algorithm/mechanism/stack"
+        ),
+        .testTarget(
+            name: "AlgorithmQueueTests",
+            dependencies: ["AlgorithmQueue"],
+            path: "Tests/algorithm/mechanism/queue"
         ),
         .testTarget(
             name: "AlgorithmTreeTests",
             dependencies: ["AlgorithmTree"],
             path: "Tests/algorithm/mechanism/tree"
+        ),
+        .testTarget(
+            name: "AlgorithmMonotonicStackTests",
+            dependencies: ["AlgorithmMonotonicStack"],
+            path: "Tests/algorithm/pattern/monotonic-stack"
         ),
         .testTarget(
             name: "AlgorithmSortingAndTwoPointerTests",

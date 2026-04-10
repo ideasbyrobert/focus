@@ -1,5 +1,5 @@
 import XCTest
-@testable import AlgorithmStackAndQueue
+@testable import AlgorithmMonotonicStack
 
 final class OnlineStockSpanTests: XCTestCase
 {

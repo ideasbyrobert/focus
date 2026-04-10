@@ -1,5 +1,5 @@
 import XCTest
-@testable import AlgorithmStackAndQueue
+@testable import AlgorithmStack
 
 final class BaseballGameTests: XCTestCase
 {
