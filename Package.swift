@@ -68,6 +68,10 @@ let package = Package(
             name: "AlgorithmBinarySearch",
             targets: ["AlgorithmBinarySearch"]
         ),
+        .library(
+            name: "AlgorithmDynamicProgramming",
+            targets: ["AlgorithmDynamicProgramming"]
+        ),
     ],
     targets: [
         .target(
@@ -129,6 +133,10 @@ let package = Package(
         .target(
             name: "AlgorithmBinarySearch",
             path: "Sources/algorithm/pattern/binary-search"
+        ),
+        .target(
+            name: "AlgorithmDynamicProgramming",
+            path: "Sources/algorithm/pattern/dynamic-programming"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -210,6 +218,11 @@ let package = Package(
             name: "AlgorithmBinarySearchTests",
             dependencies: ["AlgorithmBinarySearch"],
             path: "Tests/algorithm/pattern/binary-search"
+        ),
+        .testTarget(
+            name: "AlgorithmDynamicProgrammingTests",
+            dependencies: ["AlgorithmDynamicProgramming"],
+            path: "Tests/algorithm/pattern/dynamic-programming"
         ),
     ],
     swiftLanguageModes: [.v6]

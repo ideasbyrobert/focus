@@ -69,6 +69,10 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - recursion-and-binary-tree
     - divide-and-conquer
     - binary-search
+    - dynamic-programming
+      - 01-memoization
+      - 02-tabulation
+      - 03-state-machine
       
 ## reference
 
