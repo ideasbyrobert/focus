@@ -61,6 +61,9 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 01-binary
       - 02-binary-search
       - 03-trie
+    - graph
+      - 01-traversal
+      - 02-topology
   - pattern
     - monotonic-stack
     - sorting-and-two-pointer

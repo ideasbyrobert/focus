@@ -41,6 +41,10 @@ let package = Package(
             targets: ["AlgorithmTree"]
         ),
         .library(
+            name: "AlgorithmGraph",
+            targets: ["AlgorithmGraph"]
+        ),
+        .library(
             name: "AlgorithmMonotonicStack",
             targets: ["AlgorithmMonotonicStack"]
         ),
@@ -105,6 +109,10 @@ let package = Package(
         .target(
             name: "AlgorithmTree",
             path: "Sources/algorithm/mechanism/tree"
+        ),
+        .target(
+            name: "AlgorithmGraph",
+            path: "Sources/algorithm/mechanism/graph"
         ),
         .target(
             name: "AlgorithmMonotonicStack",
@@ -183,6 +191,11 @@ let package = Package(
             name: "AlgorithmTreeTests",
             dependencies: ["AlgorithmTree"],
             path: "Tests/algorithm/mechanism/tree"
+        ),
+        .testTarget(
+            name: "AlgorithmGraphTests",
+            dependencies: ["AlgorithmGraph"],
+            path: "Tests/algorithm/mechanism/graph"
         ),
         .testTarget(
             name: "AlgorithmMonotonicStackTests",
