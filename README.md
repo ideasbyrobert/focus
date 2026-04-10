@@ -54,6 +54,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 03-matrix-traversal
       - 04-math-fluency
     - linked-list
+    - hash-map
       
 ## reference
 

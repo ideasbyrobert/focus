@@ -24,6 +24,10 @@ let package = Package(
             name: "AlgorithmLinkedList",
             targets: ["AlgorithmLinkedList"]
         ),
+        .library(
+            name: "AlgorithmHashMap",
+            targets: ["AlgorithmHashMap"]
+        ),
     ],
     targets: [
         .target(
@@ -41,6 +45,10 @@ let package = Package(
         .target(
             name: "AlgorithmLinkedList",
             path: "Sources/algorithm/mechanism/linked-list"
+        ),
+        .target(
+            name: "AlgorithmHashMap",
+            path: "Sources/algorithm/mechanism/hash-map"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -67,6 +75,11 @@ let package = Package(
             name: "AlgorithmLinkedListTests",
             dependencies: ["AlgorithmLinkedList"],
             path: "Tests/algorithm/mechanism/linked-list"
+        ),
+        .testTarget(
+            name: "AlgorithmHashMapTests",
+            dependencies: ["AlgorithmHashMap"],
+            path: "Tests/algorithm/mechanism/hash-map"
         ),
     ],
     swiftLanguageModes: [.v6]
