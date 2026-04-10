@@ -76,6 +76,10 @@ let package = Package(
             name: "AlgorithmDynamicProgramming",
             targets: ["AlgorithmDynamicProgramming"]
         ),
+        .library(
+            name: "AlgorithmHeap",
+            targets: ["AlgorithmHeap"]
+        ),
     ],
     targets: [
         .target(
@@ -145,6 +149,10 @@ let package = Package(
         .target(
             name: "AlgorithmDynamicProgramming",
             path: "Sources/algorithm/pattern/dynamic-programming"
+        ),
+        .target(
+            name: "AlgorithmHeap",
+            path: "Sources/algorithm/mechanism/heap"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -236,6 +244,11 @@ let package = Package(
             name: "AlgorithmDynamicProgrammingTests",
             dependencies: ["AlgorithmDynamicProgramming"],
             path: "Tests/algorithm/pattern/dynamic-programming"
+        ),
+        .testTarget(
+            name: "AlgorithmHeapTests",
+            dependencies: ["AlgorithmHeap"],
+            path: "Tests/algorithm/mechanism/heap"
         ),
     ],
     swiftLanguageModes: [.v6]
