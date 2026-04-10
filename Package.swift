@@ -148,11 +148,11 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmSortingAndTwoPointer",
-            path: "Sources/algorithm/pattern/sorting-and-two-pointer"
+            path: "Sources/algorithm/pattern/sorting/01-sorting-and-two-pointer"
         ),
         .target(
             name: "AlgorithmSortingAndInterval",
-            path: "Sources/algorithm/pattern/sorting-and-interval"
+            path: "Sources/algorithm/pattern/sorting/02-sorting-and-interval"
         ),
         .target(
             name: "AlgorithmPrefixSum",
@@ -188,15 +188,15 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmMathAndBit",
-            path: "Sources/algorithm/pattern/math-and-bit"
+            path: "Sources/algorithm/pattern/math/02-math-and-bit"
         ),
         .target(
             name: "AlgorithmMathAndArray",
-            path: "Sources/algorithm/pattern/math-and-array"
+            path: "Sources/algorithm/pattern/math/01-math-and-array"
         ),
         .target(
             name: "AlgorithmMathFluency",
-            path: "Sources/algorithm/pattern/math-fluency"
+            path: "Sources/algorithm/pattern/math/03-math-fluency"
         ),
         .target(
             name: "AlgorithmPriorityQueue",
@@ -261,12 +261,12 @@ let package = Package(
         .testTarget(
             name: "AlgorithmSortingAndTwoPointerTests",
             dependencies: ["AlgorithmSortingAndTwoPointer"],
-            path: "Tests/algorithm/pattern/sorting-and-two-pointer"
+            path: "Tests/algorithm/pattern/sorting/01-sorting-and-two-pointer"
         ),
         .testTarget(
             name: "AlgorithmSortingAndIntervalTests",
             dependencies: ["AlgorithmSortingAndInterval"],
-            path: "Tests/algorithm/pattern/sorting-and-interval"
+            path: "Tests/algorithm/pattern/sorting/02-sorting-and-interval"
         ),
         .testTarget(
             name: "AlgorithmPrefixSumTests",
@@ -311,17 +311,17 @@ let package = Package(
         .testTarget(
             name: "AlgorithmMathAndBitTests",
             dependencies: ["AlgorithmMathAndBit"],
-            path: "Tests/algorithm/pattern/math-and-bit"
+            path: "Tests/algorithm/pattern/math/02-math-and-bit"
         ),
         .testTarget(
             name: "AlgorithmMathAndArrayTests",
             dependencies: ["AlgorithmMathAndArray"],
-            path: "Tests/algorithm/pattern/math-and-array"
+            path: "Tests/algorithm/pattern/math/01-math-and-array"
         ),
         .testTarget(
             name: "AlgorithmMathFluencyTests",
             dependencies: ["AlgorithmMathFluency"],
-            path: "Tests/algorithm/pattern/math-fluency"
+            path: "Tests/algorithm/pattern/math/03-math-fluency"
         ),
         .testTarget(
             name: "AlgorithmPriorityQueueTests",

@@ -68,8 +68,9 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - priority-queue
   - pattern
     - monotonic-stack
-    - sorting-and-two-pointer
-    - sorting-and-interval
+    - sorting
+      - 01-sorting-and-two-pointer
+      - 02-sorting-and-interval
     - prefix-sum
     - recursion
       - 01-binary-tree
@@ -82,9 +83,10 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 02-tabulation
       - 03-state-machine
     - greedy-selection
-    - math-and-array
-    - math-and-bit
-    - math-fluency
+    - math
+      - 01-math-and-array
+      - 02-math-and-bit
+      - 03-math-fluency
       
 ## reference
 
