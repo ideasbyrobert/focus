@@ -48,6 +48,10 @@ let package = Package(
             name: "AlgorithmPrefixSum",
             targets: ["AlgorithmPrefixSum"]
         ),
+        .library(
+            name: "AlgorithmRecursionAndBinaryTree",
+            targets: ["AlgorithmRecursionAndBinaryTree"]
+        ),
     ],
     targets: [
         .target(
@@ -89,6 +93,10 @@ let package = Package(
         .target(
             name: "AlgorithmPrefixSum",
             path: "Sources/algorithm/pattern/prefix-sum"
+        ),
+        .target(
+            name: "AlgorithmRecursionAndBinaryTree",
+            path: "Sources/algorithm/pattern/recursion-and-binary-tree"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -145,6 +153,11 @@ let package = Package(
             name: "AlgorithmPrefixSumTests",
             dependencies: ["AlgorithmPrefixSum"],
             path: "Tests/algorithm/pattern/prefix-sum"
+        ),
+        .testTarget(
+            name: "AlgorithmRecursionAndBinaryTreeTests",
+            dependencies: ["AlgorithmRecursionAndBinaryTree"],
+            path: "Tests/algorithm/pattern/recursion-and-binary-tree"
         ),
     ],
     swiftLanguageModes: [.v6]
