@@ -21,44 +21,44 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
 - algorithm
   - mechanism
     - array
-      - 01-in-place-transformation
-      - 02-parsing-and-transformation
-      - 03-matrix-traversal
+      - in-place-transformation
+      - parsing-and-transformation
+      - matrix-traversal
     - linked-list
     - hash
-      - 01-hash-map
-      - 02-hash-set
+      - hash-map
+      - hash-set
     - stack
     - queue
     - tree
-      - 01-binary-tree
-        - 01-iterative-traversal
-        - 02-recursive-traversal
-      - 02-binary-search-tree
-      - 03-trie
+      - binary-tree
+        - iterative-traversal
+        - recursive-traversal
+      - binary-search-tree
+      - trie
     - graph
-      - 01-traversal
-      - 02-topology
+      - traversal
+      - topology
     - priority-queue
   - pattern
     - monotonic-stack
     - sorting
-      - 01-sorting-and-two-pointer
-      - 02-sorting-and-interval
+      - sorting-and-two-pointer
+      - sorting-and-interval
     - prefix-sum
     - sliding-window
     - binary-search
     - backtracking
     - divide-and-conquer
     - dynamic-programming
-      - 01-memoization
-      - 02-tabulation
-      - 03-state-machine
+      - memoization
+      - tabulation
+      - state-machine
     - greedy-selection
     - math-fluency
-      - 01-math-and-array
-      - 02-math-and-bit
-      - 03-math-toolkit
+      - math-and-array
+      - math-and-bit
+      - math-toolkit
 - code
   - tour
     - 01-simple-values

@@ -138,7 +138,7 @@ let package = Package(
             name: "AlgorithmTree",
             path: "Sources/algorithm/mechanism/tree",
             exclude: [
-                "01-binary-tree/02-recursive-traversal"
+                "binary-tree/recursive-traversal"
             ]
         ),
         .target(
@@ -151,11 +151,11 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmSortingAndTwoPointer",
-            path: "Sources/algorithm/pattern/sorting/01-sorting-and-two-pointer"
+            path: "Sources/algorithm/pattern/sorting/sorting-and-two-pointer"
         ),
         .target(
             name: "AlgorithmSortingAndInterval",
-            path: "Sources/algorithm/pattern/sorting/02-sorting-and-interval"
+            path: "Sources/algorithm/pattern/sorting/sorting-and-interval"
         ),
         .target(
             name: "AlgorithmPrefixSum",
@@ -163,7 +163,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmRecursionAndBinaryTree",
-            path: "Sources/algorithm/mechanism/tree/01-binary-tree/02-recursive-traversal"
+            path: "Sources/algorithm/mechanism/tree/binary-tree/recursive-traversal"
         ),
         .target(
             name: "AlgorithmDivideAndConquer",
@@ -191,15 +191,15 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmMathAndBit",
-            path: "Sources/algorithm/pattern/math-fluency/02-math-and-bit"
+            path: "Sources/algorithm/pattern/math-fluency/math-and-bit"
         ),
         .target(
             name: "AlgorithmMathAndArray",
-            path: "Sources/algorithm/pattern/math-fluency/01-math-and-array"
+            path: "Sources/algorithm/pattern/math-fluency/math-and-array"
         ),
         .target(
             name: "AlgorithmMathFluency",
-            path: "Sources/algorithm/pattern/math-fluency/03-math-toolkit"
+            path: "Sources/algorithm/pattern/math-fluency/math-toolkit"
         ),
         .target(
             name: "AlgorithmPriorityQueue",
@@ -251,7 +251,7 @@ let package = Package(
             dependencies: ["AlgorithmTree"],
             path: "Tests/algorithm/mechanism/tree",
             exclude: [
-                "01-binary-tree/02-recursive-traversal"
+                "binary-tree/recursive-traversal"
             ]
         ),
         .testTarget(
@@ -267,12 +267,12 @@ let package = Package(
         .testTarget(
             name: "AlgorithmSortingAndTwoPointerTests",
             dependencies: ["AlgorithmSortingAndTwoPointer"],
-            path: "Tests/algorithm/pattern/sorting/01-sorting-and-two-pointer"
+            path: "Tests/algorithm/pattern/sorting/sorting-and-two-pointer"
         ),
         .testTarget(
             name: "AlgorithmSortingAndIntervalTests",
             dependencies: ["AlgorithmSortingAndInterval"],
-            path: "Tests/algorithm/pattern/sorting/02-sorting-and-interval"
+            path: "Tests/algorithm/pattern/sorting/sorting-and-interval"
         ),
         .testTarget(
             name: "AlgorithmPrefixSumTests",
@@ -282,7 +282,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmRecursionAndBinaryTreeTests",
             dependencies: ["AlgorithmRecursionAndBinaryTree"],
-            path: "Tests/algorithm/mechanism/tree/01-binary-tree/02-recursive-traversal"
+            path: "Tests/algorithm/mechanism/tree/binary-tree/recursive-traversal"
         ),
         .testTarget(
             name: "AlgorithmDivideAndConquerTests",
@@ -317,17 +317,17 @@ let package = Package(
         .testTarget(
             name: "AlgorithmMathAndBitTests",
             dependencies: ["AlgorithmMathAndBit"],
-            path: "Tests/algorithm/pattern/math-fluency/02-math-and-bit"
+            path: "Tests/algorithm/pattern/math-fluency/math-and-bit"
         ),
         .testTarget(
             name: "AlgorithmMathAndArrayTests",
             dependencies: ["AlgorithmMathAndArray"],
-            path: "Tests/algorithm/pattern/math-fluency/01-math-and-array"
+            path: "Tests/algorithm/pattern/math-fluency/math-and-array"
         ),
         .testTarget(
             name: "AlgorithmMathFluencyTests",
             dependencies: ["AlgorithmMathFluency"],
-            path: "Tests/algorithm/pattern/math-fluency/03-math-toolkit"
+            path: "Tests/algorithm/pattern/math-fluency/math-toolkit"
         ),
         .testTarget(
             name: "AlgorithmPriorityQueueTests",
