@@ -53,7 +53,9 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 02-parsing-and-transformation
       - 03-matrix-traversal
     - linked-list
-    - hash-map
+    - hash
+      - 01-hash-map
+      - 02-hash-set
     - stack
     - queue
     - tree

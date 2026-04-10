@@ -25,8 +25,8 @@ let package = Package(
             targets: ["AlgorithmLinkedList"]
         ),
         .library(
-            name: "AlgorithmHashMap",
-            targets: ["AlgorithmHashMap"]
+            name: "AlgorithmHash",
+            targets: ["AlgorithmHash"]
         ),
         .library(
             name: "AlgorithmStack",
@@ -119,8 +119,8 @@ let package = Package(
             path: "Sources/algorithm/mechanism/linked-list"
         ),
         .target(
-            name: "AlgorithmHashMap",
-            path: "Sources/algorithm/mechanism/hash-map"
+            name: "AlgorithmHash",
+            path: "Sources/algorithm/mechanism/hash"
         ),
         .target(
             name: "AlgorithmStack",
@@ -221,9 +221,9 @@ let package = Package(
             path: "Tests/algorithm/mechanism/linked-list"
         ),
         .testTarget(
-            name: "AlgorithmHashMapTests",
-            dependencies: ["AlgorithmHashMap"],
-            path: "Tests/algorithm/mechanism/hash-map"
+            name: "AlgorithmHashTests",
+            dependencies: ["AlgorithmHash"],
+            path: "Tests/algorithm/mechanism/hash"
         ),
         .testTarget(
             name: "AlgorithmStackTests",

@@ -1,5 +1,5 @@
 import XCTest
-@testable import AlgorithmHashMap
+@testable import AlgorithmHash
 
 final class LongestConsecutiveSequenceTests: XCTestCase
 {
