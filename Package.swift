@@ -37,12 +37,12 @@ let package = Package(
             targets: ["AlgorithmTree"]
         ),
         .library(
-            name: "AlgorithmSortAndTwoPointer",
-            targets: ["AlgorithmSortAndTwoPointer"]
+            name: "AlgorithmSortingAndTwoPointer",
+            targets: ["AlgorithmSortingAndTwoPointer"]
         ),
         .library(
-            name: "AlgorithmSortAndInterval",
-            targets: ["AlgorithmSortAndInterval"]
+            name: "AlgorithmSortingAndInterval",
+            targets: ["AlgorithmSortingAndInterval"]
         ),
         .library(
             name: "AlgorithmPrefixSum",
@@ -91,12 +91,12 @@ let package = Package(
             path: "Sources/algorithm/mechanism/tree"
         ),
         .target(
-            name: "AlgorithmSortAndTwoPointer",
-            path: "Sources/algorithm/pattern/sort-and-two-pointer"
+            name: "AlgorithmSortingAndTwoPointer",
+            path: "Sources/algorithm/pattern/sorting-and-two-pointer"
         ),
         .target(
-            name: "AlgorithmSortAndInterval",
-            path: "Sources/algorithm/pattern/sort-and-interval"
+            name: "AlgorithmSortingAndInterval",
+            path: "Sources/algorithm/pattern/sorting-and-interval"
         ),
         .target(
             name: "AlgorithmPrefixSum",
@@ -156,14 +156,14 @@ let package = Package(
             path: "Tests/algorithm/mechanism/tree"
         ),
         .testTarget(
-            name: "AlgorithmSortAndTwoPointerTests",
-            dependencies: ["AlgorithmSortAndTwoPointer"],
-            path: "Tests/algorithm/pattern/sort-and-two-pointer"
+            name: "AlgorithmSortingAndTwoPointerTests",
+            dependencies: ["AlgorithmSortingAndTwoPointer"],
+            path: "Tests/algorithm/pattern/sorting-and-two-pointer"
         ),
         .testTarget(
-            name: "AlgorithmSortAndIntervalTests",
-            dependencies: ["AlgorithmSortAndInterval"],
-            path: "Tests/algorithm/pattern/sort-and-interval"
+            name: "AlgorithmSortingAndIntervalTests",
+            dependencies: ["AlgorithmSortingAndInterval"],
+            path: "Tests/algorithm/pattern/sorting-and-interval"
         ),
         .testTarget(
             name: "AlgorithmPrefixSumTests",

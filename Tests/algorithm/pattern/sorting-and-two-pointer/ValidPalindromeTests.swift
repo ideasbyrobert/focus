@@ -1,5 +1,5 @@
 import XCTest
-@testable import AlgorithmSortAndTwoPointer
+@testable import AlgorithmSortingAndTwoPointer
 
 final class ValidPalindromeTests: XCTestCase
 {

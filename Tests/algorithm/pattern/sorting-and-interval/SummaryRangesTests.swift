@@ -1,5 +1,5 @@
 import XCTest
-@testable import AlgorithmSortAndInterval
+@testable import AlgorithmSortingAndInterval
 
 final class SummaryRangesTests: XCTestCase
 {

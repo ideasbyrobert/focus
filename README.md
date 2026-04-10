@@ -64,8 +64,8 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 02-binary-search
       - 03-trie
   - pattern
-    - sort-and-two-pointer
-    - sort-and-interval
+    - sorting-and-two-pointer
+    - sorting-and-interval
     - prefix-sum
     - recursion-and-binary-tree
     - divide-and-conquer
