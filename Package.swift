@@ -36,6 +36,10 @@ let package = Package(
             name: "AlgorithmSortAndTwoPointer",
             targets: ["AlgorithmSortAndTwoPointer"]
         ),
+        .library(
+            name: "AlgorithmSortAndInterval",
+            targets: ["AlgorithmSortAndInterval"]
+        ),
     ],
     targets: [
         .target(
@@ -65,6 +69,10 @@ let package = Package(
         .target(
             name: "AlgorithmSortAndTwoPointer",
             path: "Sources/algorithm/pattern/sort-and-two-pointer"
+        ),
+        .target(
+            name: "AlgorithmSortAndInterval",
+            path: "Sources/algorithm/pattern/sort-and-interval"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -106,6 +114,11 @@ let package = Package(
             name: "AlgorithmSortAndTwoPointerTests",
             dependencies: ["AlgorithmSortAndTwoPointer"],
             path: "Tests/algorithm/pattern/sort-and-two-pointer"
+        ),
+        .testTarget(
+            name: "AlgorithmSortAndIntervalTests",
+            dependencies: ["AlgorithmSortAndInterval"],
+            path: "Tests/algorithm/pattern/sort-and-interval"
         ),
     ],
     swiftLanguageModes: [.v6]

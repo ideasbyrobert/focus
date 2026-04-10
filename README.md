@@ -61,6 +61,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 03-mono
   - pattern
     - sort-and-two-pointer
+    - sort-and-interval
       
 ## reference
 
