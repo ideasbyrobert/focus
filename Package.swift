@@ -73,6 +73,10 @@ let package = Package(
             targets: ["AlgorithmBinarySearch"]
         ),
         .library(
+            name: "AlgorithmSlidingWindow",
+            targets: ["AlgorithmSlidingWindow"]
+        ),
+        .library(
             name: "AlgorithmDynamicProgramming",
             targets: ["AlgorithmDynamicProgramming"]
         ),
@@ -165,6 +169,10 @@ let package = Package(
         .target(
             name: "AlgorithmBinarySearch",
             path: "Sources/algorithm/pattern/binary-search"
+        ),
+        .target(
+            name: "AlgorithmSlidingWindow",
+            path: "Sources/algorithm/pattern/sliding-window"
         ),
         .target(
             name: "AlgorithmDynamicProgramming",
@@ -279,6 +287,11 @@ let package = Package(
             name: "AlgorithmBinarySearchTests",
             dependencies: ["AlgorithmBinarySearch"],
             path: "Tests/algorithm/pattern/binary-search"
+        ),
+        .testTarget(
+            name: "AlgorithmSlidingWindowTests",
+            dependencies: ["AlgorithmSlidingWindow"],
+            path: "Tests/algorithm/pattern/sliding-window"
         ),
         .testTarget(
             name: "AlgorithmDynamicProgrammingTests",
