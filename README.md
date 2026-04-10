@@ -83,7 +83,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 02-tabulation
       - 03-state-machine
     - greedy-selection
-    - mathematics
+    - math-fluency
       - 01-math-and-array
       - 02-math-and-bit
       - 03-math-toolkit

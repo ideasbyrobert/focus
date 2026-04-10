@@ -188,15 +188,15 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmMathAndBit",
-            path: "Sources/algorithm/pattern/mathematics/02-math-and-bit"
+            path: "Sources/algorithm/pattern/math-fluency/02-math-and-bit"
         ),
         .target(
             name: "AlgorithmMathAndArray",
-            path: "Sources/algorithm/pattern/mathematics/01-math-and-array"
+            path: "Sources/algorithm/pattern/math-fluency/01-math-and-array"
         ),
         .target(
             name: "AlgorithmMathFluency",
-            path: "Sources/algorithm/pattern/mathematics/03-math-toolkit"
+            path: "Sources/algorithm/pattern/math-fluency/03-math-toolkit"
         ),
         .target(
             name: "AlgorithmPriorityQueue",
@@ -311,17 +311,17 @@ let package = Package(
         .testTarget(
             name: "AlgorithmMathAndBitTests",
             dependencies: ["AlgorithmMathAndBit"],
-            path: "Tests/algorithm/pattern/mathematics/02-math-and-bit"
+            path: "Tests/algorithm/pattern/math-fluency/02-math-and-bit"
         ),
         .testTarget(
             name: "AlgorithmMathAndArrayTests",
             dependencies: ["AlgorithmMathAndArray"],
-            path: "Tests/algorithm/pattern/mathematics/01-math-and-array"
+            path: "Tests/algorithm/pattern/math-fluency/01-math-and-array"
         ),
         .testTarget(
             name: "AlgorithmMathFluencyTests",
             dependencies: ["AlgorithmMathFluency"],
-            path: "Tests/algorithm/pattern/mathematics/03-math-toolkit"
+            path: "Tests/algorithm/pattern/math-fluency/03-math-toolkit"
         ),
         .testTarget(
             name: "AlgorithmPriorityQueueTests",
