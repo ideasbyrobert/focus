@@ -13,6 +13,10 @@ let package = Package(
             targets: ["CodeTour"]
         ),
         .library(
+            name: "CodeGuideTheBasics",
+            targets: ["CodeGuideTheBasics"]
+        ),
+        .library(
             name: "AlgorithmArray",
             targets: ["AlgorithmArray"]
         ),
@@ -23,6 +27,10 @@ let package = Package(
             path: "Sources/code/tour"
         ),
         .target(
+            name: "CodeGuideTheBasics",
+            path: "Sources/code/guide/the-basics"
+        ),
+        .target(
             name: "AlgorithmArray",
             path: "Sources/algorithm/mechanism/array"
         ),
@@ -30,6 +38,14 @@ let package = Package(
             name: "CodeTourTests",
             dependencies: ["CodeTour"],
             path: "Tests/code/tour",
+            resources: [
+                .copy("_support/Fixtures"),
+            ]
+        ),
+        .testTarget(
+            name: "CodeGuideTheBasicsTests",
+            dependencies: ["CodeGuideTheBasics"],
+            path: "Tests/code/guide/the-basics",
             resources: [
                 .copy("_support/Fixtures"),
             ]

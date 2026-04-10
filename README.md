@@ -29,6 +29,23 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - 07-protocols-and-extensions
     - 08-error-handling
     - 09-generics
+  - guide
+    - the-basics
+      - 01-constants-and-variables
+      - 02-comments
+      - 03-semicolons
+      - 04-integers
+      - 05-floating-point-numbers
+      - 06-type-safety-and-type-inference
+      - 07-numeric-literals
+      - 08-numeric-type-conversion
+      - 09-type-aliases
+      - 10-booleans
+      - 11-tuples
+      - 12-optionals
+      - 13-memory-safety
+      - 14-error-handling
+      - 15-assertions-and-preconditions
 - algorithm
   - mechanism
     - array
