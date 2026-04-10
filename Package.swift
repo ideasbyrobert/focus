@@ -136,7 +136,10 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmTree",
-            path: "Sources/algorithm/mechanism/tree"
+            path: "Sources/algorithm/mechanism/tree",
+            exclude: [
+                "01-binary-tree/02-recursion"
+            ]
         ),
         .target(
             name: "AlgorithmGraph",
@@ -160,7 +163,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmRecursionAndBinaryTree",
-            path: "Sources/algorithm/pattern/recursion/01-binary-tree"
+            path: "Sources/algorithm/mechanism/tree/01-binary-tree/02-recursion"
         ),
         .target(
             name: "AlgorithmDivideAndConquer",
@@ -184,7 +187,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmBacktracking",
-            path: "Sources/algorithm/pattern/recursion/02-backtracking"
+            path: "Sources/algorithm/pattern/backtracking"
         ),
         .target(
             name: "AlgorithmMathAndBit",
@@ -246,7 +249,10 @@ let package = Package(
         .testTarget(
             name: "AlgorithmTreeTests",
             dependencies: ["AlgorithmTree"],
-            path: "Tests/algorithm/mechanism/tree"
+            path: "Tests/algorithm/mechanism/tree",
+            exclude: [
+                "01-binary-tree/02-recursion"
+            ]
         ),
         .testTarget(
             name: "AlgorithmGraphTests",
@@ -276,7 +282,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmRecursionAndBinaryTreeTests",
             dependencies: ["AlgorithmRecursionAndBinaryTree"],
-            path: "Tests/algorithm/pattern/recursion/01-binary-tree"
+            path: "Tests/algorithm/mechanism/tree/01-binary-tree/02-recursion"
         ),
         .testTarget(
             name: "AlgorithmDivideAndConquerTests",
@@ -306,7 +312,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmBacktrackingTests",
             dependencies: ["AlgorithmBacktracking"],
-            path: "Tests/algorithm/pattern/recursion/02-backtracking"
+            path: "Tests/algorithm/pattern/backtracking"
         ),
         .testTarget(
             name: "AlgorithmMathAndBitTests",

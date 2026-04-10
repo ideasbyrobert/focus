@@ -32,6 +32,8 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - queue
     - tree
       - 01-binary-tree
+        - 01-breadth-first-search
+        - 02-recursion
       - 02-binary-search-tree
       - 03-trie
     - graph
@@ -46,9 +48,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - prefix-sum
     - sliding-window
     - binary-search
-    - recursion
-      - 01-binary-tree
-      - 02-backtracking
+    - backtracking
     - divide-and-conquer
     - dynamic-programming
       - 01-memoization
