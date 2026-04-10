@@ -93,6 +93,10 @@ let package = Package(
             targets: ["AlgorithmMathAndArray"]
         ),
         .library(
+            name: "AlgorithmMathFluency",
+            targets: ["AlgorithmMathFluency"]
+        ),
+        .library(
             name: "AlgorithmHeap",
             targets: ["AlgorithmHeap"]
         ),
@@ -181,6 +185,10 @@ let package = Package(
         .target(
             name: "AlgorithmMathAndArray",
             path: "Sources/algorithm/pattern/math-and-array"
+        ),
+        .target(
+            name: "AlgorithmMathFluency",
+            path: "Sources/algorithm/pattern/math-fluency"
         ),
         .target(
             name: "AlgorithmHeap",
@@ -296,6 +304,11 @@ let package = Package(
             name: "AlgorithmMathAndArrayTests",
             dependencies: ["AlgorithmMathAndArray"],
             path: "Tests/algorithm/pattern/math-and-array"
+        ),
+        .testTarget(
+            name: "AlgorithmMathFluencyTests",
+            dependencies: ["AlgorithmMathFluency"],
+            path: "Tests/algorithm/pattern/math-fluency"
         ),
         .testTarget(
             name: "AlgorithmHeapTests",

@@ -80,6 +80,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - backtracking
     - math-and-array
     - math-and-bit
+    - math-fluency
       
 ## reference
 
