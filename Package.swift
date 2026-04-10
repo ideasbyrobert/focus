@@ -56,6 +56,10 @@ let package = Package(
             name: "AlgorithmDivideAndConquer",
             targets: ["AlgorithmDivideAndConquer"]
         ),
+        .library(
+            name: "AlgorithmBinarySearch",
+            targets: ["AlgorithmBinarySearch"]
+        ),
     ],
     targets: [
         .target(
@@ -105,6 +109,10 @@ let package = Package(
         .target(
             name: "AlgorithmDivideAndConquer",
             path: "Sources/algorithm/pattern/divide-and-conquer"
+        ),
+        .target(
+            name: "AlgorithmBinarySearch",
+            path: "Sources/algorithm/pattern/binary-search"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -171,6 +179,11 @@ let package = Package(
             name: "AlgorithmDivideAndConquerTests",
             dependencies: ["AlgorithmDivideAndConquer"],
             path: "Tests/algorithm/pattern/divide-and-conquer"
+        ),
+        .testTarget(
+            name: "AlgorithmBinarySearchTests",
+            dependencies: ["AlgorithmBinarySearch"],
+            path: "Tests/algorithm/pattern/binary-search"
         ),
     ],
     swiftLanguageModes: [.v6]

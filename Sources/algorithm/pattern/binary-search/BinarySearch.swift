@@ -1,0 +1,29 @@
+public enum BinarySearch
+{
+    public static func solve(_ numbers: [Int], target: Int) -> Int
+    {
+        var left = 0
+        var right = numbers.count - 1
+
+        while left <= right
+        {
+            let middle = left + ((right - left) / 2)
+
+            if numbers[middle] == target
+            {
+                return middle
+            }
+
+            if numbers[middle] < target
+            {
+                left = middle + 1
+            }
+            else
+            {
+                right = middle - 1
+            }
+        }
+
+        return -1
+    }
+}
