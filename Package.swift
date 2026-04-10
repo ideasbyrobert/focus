@@ -77,6 +77,10 @@ let package = Package(
             targets: ["AlgorithmDynamicProgramming"]
         ),
         .library(
+            name: "AlgorithmGreedySelection",
+            targets: ["AlgorithmGreedySelection"]
+        ),
+        .library(
             name: "AlgorithmHeap",
             targets: ["AlgorithmHeap"]
         ),
@@ -149,6 +153,10 @@ let package = Package(
         .target(
             name: "AlgorithmDynamicProgramming",
             path: "Sources/algorithm/pattern/dynamic-programming"
+        ),
+        .target(
+            name: "AlgorithmGreedySelection",
+            path: "Sources/algorithm/pattern/greedy-selection"
         ),
         .target(
             name: "AlgorithmHeap",
@@ -244,6 +252,11 @@ let package = Package(
             name: "AlgorithmDynamicProgrammingTests",
             dependencies: ["AlgorithmDynamicProgramming"],
             path: "Tests/algorithm/pattern/dynamic-programming"
+        ),
+        .testTarget(
+            name: "AlgorithmGreedySelectionTests",
+            dependencies: ["AlgorithmGreedySelection"],
+            path: "Tests/algorithm/pattern/greedy-selection"
         ),
         .testTarget(
             name: "AlgorithmHeapTests",

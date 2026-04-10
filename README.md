@@ -77,6 +77,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 01-memoization
       - 02-tabulation
       - 03-state-machine
+    - greedy-selection
       
 ## reference
 
