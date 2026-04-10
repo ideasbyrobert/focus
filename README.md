@@ -75,7 +75,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - recursion
       - 01-binary-tree
       - 02-backtracking
-    - divide-and-conquer
+      - 03-divide-and-conquer
     - binary-search
     - sliding-window
     - dynamic-programming

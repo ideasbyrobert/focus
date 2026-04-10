@@ -164,7 +164,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmDivideAndConquer",
-            path: "Sources/algorithm/pattern/divide-and-conquer"
+            path: "Sources/algorithm/pattern/recursion/03-divide-and-conquer"
         ),
         .target(
             name: "AlgorithmBinarySearch",
@@ -281,7 +281,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmDivideAndConquerTests",
             dependencies: ["AlgorithmDivideAndConquer"],
-            path: "Tests/algorithm/pattern/divide-and-conquer"
+            path: "Tests/algorithm/pattern/recursion/03-divide-and-conquer"
         ),
         .testTarget(
             name: "AlgorithmBinarySearchTests",
