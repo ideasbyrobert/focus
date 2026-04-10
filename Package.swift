@@ -138,7 +138,7 @@ let package = Package(
             name: "AlgorithmTree",
             path: "Sources/algorithm/mechanism/tree",
             exclude: [
-                "01-binary-tree/02-recursive-structure"
+                "01-binary-tree/02-recursive-traversal"
             ]
         ),
         .target(
@@ -163,7 +163,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmRecursionAndBinaryTree",
-            path: "Sources/algorithm/mechanism/tree/01-binary-tree/02-recursive-structure"
+            path: "Sources/algorithm/mechanism/tree/01-binary-tree/02-recursive-traversal"
         ),
         .target(
             name: "AlgorithmDivideAndConquer",
@@ -251,7 +251,7 @@ let package = Package(
             dependencies: ["AlgorithmTree"],
             path: "Tests/algorithm/mechanism/tree",
             exclude: [
-                "01-binary-tree/02-recursive-structure"
+                "01-binary-tree/02-recursive-traversal"
             ]
         ),
         .testTarget(
@@ -282,7 +282,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmRecursionAndBinaryTreeTests",
             dependencies: ["AlgorithmRecursionAndBinaryTree"],
-            path: "Tests/algorithm/mechanism/tree/01-binary-tree/02-recursive-structure"
+            path: "Tests/algorithm/mechanism/tree/01-binary-tree/02-recursive-traversal"
         ),
         .testTarget(
             name: "AlgorithmDivideAndConquerTests",
