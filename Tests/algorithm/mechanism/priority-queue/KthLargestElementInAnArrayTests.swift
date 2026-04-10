@@ -1,5 +1,5 @@
 import XCTest
-@testable import AlgorithmHeap
+@testable import AlgorithmPriorityQueue
 
 final class KthLargestElementInAnArrayTests: XCTestCase
 {

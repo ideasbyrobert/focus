@@ -65,7 +65,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - graph
       - 01-traversal
       - 02-topology
-    - heap
+    - priority-queue
   - pattern
     - monotonic-stack
     - sorting-and-two-pointer

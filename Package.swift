@@ -97,8 +97,8 @@ let package = Package(
             targets: ["AlgorithmMathFluency"]
         ),
         .library(
-            name: "AlgorithmHeap",
-            targets: ["AlgorithmHeap"]
+            name: "AlgorithmPriorityQueue",
+            targets: ["AlgorithmPriorityQueue"]
         ),
     ],
     targets: [
@@ -191,8 +191,8 @@ let package = Package(
             path: "Sources/algorithm/pattern/math-fluency"
         ),
         .target(
-            name: "AlgorithmHeap",
-            path: "Sources/algorithm/mechanism/heap"
+            name: "AlgorithmPriorityQueue",
+            path: "Sources/algorithm/mechanism/priority-queue"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -311,9 +311,9 @@ let package = Package(
             path: "Tests/algorithm/pattern/math-fluency"
         ),
         .testTarget(
-            name: "AlgorithmHeapTests",
-            dependencies: ["AlgorithmHeap"],
-            path: "Tests/algorithm/mechanism/heap"
+            name: "AlgorithmPriorityQueueTests",
+            dependencies: ["AlgorithmPriorityQueue"],
+            path: "Tests/algorithm/mechanism/priority-queue"
         ),
     ],
     swiftLanguageModes: [.v6]

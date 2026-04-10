@@ -1,4 +1,4 @@
-@testable import AlgorithmHeap
+@testable import AlgorithmPriorityQueue
 
 func buildList(_ values: [Int]) -> ListNode?
 {
