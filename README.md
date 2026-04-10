@@ -55,6 +55,10 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 04-math-fluency
     - linked-list
     - hash-map
+    - stack-and-queue
+      - 01-lifo
+      - 02-fifo
+      - 03-mono
       
 ## reference
 

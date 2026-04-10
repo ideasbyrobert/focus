@@ -28,6 +28,10 @@ let package = Package(
             name: "AlgorithmHashMap",
             targets: ["AlgorithmHashMap"]
         ),
+        .library(
+            name: "AlgorithmStackAndQueue",
+            targets: ["AlgorithmStackAndQueue"]
+        ),
     ],
     targets: [
         .target(
@@ -49,6 +53,10 @@ let package = Package(
         .target(
             name: "AlgorithmHashMap",
             path: "Sources/algorithm/mechanism/hash-map"
+        ),
+        .target(
+            name: "AlgorithmStackAndQueue",
+            path: "Sources/algorithm/mechanism/stack-and-queue"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -80,6 +88,11 @@ let package = Package(
             name: "AlgorithmHashMapTests",
             dependencies: ["AlgorithmHashMap"],
             path: "Tests/algorithm/mechanism/hash-map"
+        ),
+        .testTarget(
+            name: "AlgorithmStackAndQueueTests",
+            dependencies: ["AlgorithmStackAndQueue"],
+            path: "Tests/algorithm/mechanism/stack-and-queue"
         ),
     ],
     swiftLanguageModes: [.v6]
