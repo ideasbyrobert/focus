@@ -52,6 +52,10 @@ let package = Package(
             name: "AlgorithmRecursionAndBinaryTree",
             targets: ["AlgorithmRecursionAndBinaryTree"]
         ),
+        .library(
+            name: "AlgorithmDivideAndConquer",
+            targets: ["AlgorithmDivideAndConquer"]
+        ),
     ],
     targets: [
         .target(
@@ -97,6 +101,10 @@ let package = Package(
         .target(
             name: "AlgorithmRecursionAndBinaryTree",
             path: "Sources/algorithm/pattern/recursion-and-binary-tree"
+        ),
+        .target(
+            name: "AlgorithmDivideAndConquer",
+            path: "Sources/algorithm/pattern/divide-and-conquer"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -158,6 +166,11 @@ let package = Package(
             name: "AlgorithmRecursionAndBinaryTreeTests",
             dependencies: ["AlgorithmRecursionAndBinaryTree"],
             path: "Tests/algorithm/pattern/recursion-and-binary-tree"
+        ),
+        .testTarget(
+            name: "AlgorithmDivideAndConquerTests",
+            dependencies: ["AlgorithmDivideAndConquer"],
+            path: "Tests/algorithm/pattern/divide-and-conquer"
         ),
     ],
     swiftLanguageModes: [.v6]

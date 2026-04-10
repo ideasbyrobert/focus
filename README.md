@@ -68,6 +68,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - sort-and-interval
     - prefix-sum
     - recursion-and-binary-tree
+    - divide-and-conquer
       
 ## reference
 
