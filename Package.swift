@@ -85,6 +85,10 @@ let package = Package(
             targets: ["AlgorithmBacktracking"]
         ),
         .library(
+            name: "AlgorithmMathAndBit",
+            targets: ["AlgorithmMathAndBit"]
+        ),
+        .library(
             name: "AlgorithmHeap",
             targets: ["AlgorithmHeap"]
         ),
@@ -165,6 +169,10 @@ let package = Package(
         .target(
             name: "AlgorithmBacktracking",
             path: "Sources/algorithm/pattern/backtracking"
+        ),
+        .target(
+            name: "AlgorithmMathAndBit",
+            path: "Sources/algorithm/pattern/math-and-bit"
         ),
         .target(
             name: "AlgorithmHeap",
@@ -270,6 +278,11 @@ let package = Package(
             name: "AlgorithmBacktrackingTests",
             dependencies: ["AlgorithmBacktracking"],
             path: "Tests/algorithm/pattern/backtracking"
+        ),
+        .testTarget(
+            name: "AlgorithmMathAndBitTests",
+            dependencies: ["AlgorithmMathAndBit"],
+            path: "Tests/algorithm/pattern/math-and-bit"
         ),
         .testTarget(
             name: "AlgorithmHeapTests",
