@@ -44,12 +44,12 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 01-sorting-and-two-pointer
       - 02-sorting-and-interval
     - prefix-sum
+    - sliding-window
+    - binary-search
     - recursion
       - 01-binary-tree
       - 02-backtracking
     - divide-and-conquer
-    - binary-search
-    - sliding-window
     - dynamic-programming
       - 01-memoization
       - 02-tabulation
