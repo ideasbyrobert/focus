@@ -18,34 +18,6 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
 
 ## contents
 
-- code
-  - tour
-    - 01-simple-values
-    - 02-control-flow
-    - 03-functions-and-closures
-    - 04-objects-and-classes
-    - 05-enumerations-and-structures
-    - 06-concurrency
-    - 07-protocols-and-extensions
-    - 08-error-handling
-    - 09-generics
-  - guide
-    - the-basics
-      - 01-constants-and-variables
-      - 02-comments
-      - 03-semicolons
-      - 04-integers
-      - 05-floating-point-numbers
-      - 06-type-safety-and-type-inference
-      - 07-numeric-literals
-      - 08-numeric-type-conversion
-      - 09-type-aliases
-      - 10-booleans
-      - 11-tuples
-      - 12-optionals
-      - 13-memory-safety
-      - 14-error-handling
-      - 15-assertions-and-preconditions
 - algorithm
   - mechanism
     - array
@@ -75,7 +47,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - recursion
       - 01-binary-tree
       - 02-backtracking
-      - 03-divide-and-conquer
+    - divide-and-conquer
     - binary-search
     - sliding-window
     - dynamic-programming
@@ -87,6 +59,34 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 01-math-and-array
       - 02-math-and-bit
       - 03-math-toolkit
+- code
+  - tour
+    - 01-simple-values
+    - 02-control-flow
+    - 03-functions-and-closures
+    - 04-objects-and-classes
+    - 05-enumerations-and-structures
+    - 06-concurrency
+    - 07-protocols-and-extensions
+    - 08-error-handling
+    - 09-generics
+  - guide
+    - the-basics
+      - 01-constants-and-variables
+      - 02-comments
+      - 03-semicolons
+      - 04-integers
+      - 05-floating-point-numbers
+      - 06-type-safety-and-type-inference
+      - 07-numeric-literals
+      - 08-numeric-type-conversion
+      - 09-type-aliases
+      - 10-booleans
+      - 11-tuples
+      - 12-optionals
+      - 13-memory-safety
+      - 14-error-handling
+      - 15-assertions-and-preconditions
       
 ## reference
 
