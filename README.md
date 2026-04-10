@@ -52,7 +52,6 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 01-in-place-transformation
       - 02-parsing-and-transformation
       - 03-matrix-traversal
-      - 04-math-fluency
     - linked-list
     - hash-map
     - stack
@@ -79,6 +78,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 03-state-machine
     - greedy-selection
     - backtracking
+    - math-and-array
     - math-and-bit
       
 ## reference

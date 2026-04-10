@@ -1,5 +1,5 @@
 import XCTest
-@testable import AlgorithmArray
+@testable import AlgorithmMathAndArray
 
 final class FindWinnerOnTicTacToeTests: XCTestCase
 {

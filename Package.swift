@@ -89,6 +89,10 @@ let package = Package(
             targets: ["AlgorithmMathAndBit"]
         ),
         .library(
+            name: "AlgorithmMathAndArray",
+            targets: ["AlgorithmMathAndArray"]
+        ),
+        .library(
             name: "AlgorithmHeap",
             targets: ["AlgorithmHeap"]
         ),
@@ -173,6 +177,10 @@ let package = Package(
         .target(
             name: "AlgorithmMathAndBit",
             path: "Sources/algorithm/pattern/math-and-bit"
+        ),
+        .target(
+            name: "AlgorithmMathAndArray",
+            path: "Sources/algorithm/pattern/math-and-array"
         ),
         .target(
             name: "AlgorithmHeap",
@@ -283,6 +291,11 @@ let package = Package(
             name: "AlgorithmMathAndBitTests",
             dependencies: ["AlgorithmMathAndBit"],
             path: "Tests/algorithm/pattern/math-and-bit"
+        ),
+        .testTarget(
+            name: "AlgorithmMathAndArrayTests",
+            dependencies: ["AlgorithmMathAndArray"],
+            path: "Tests/algorithm/pattern/math-and-array"
         ),
         .testTarget(
             name: "AlgorithmHeapTests",
