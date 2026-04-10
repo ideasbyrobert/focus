@@ -81,6 +81,10 @@ let package = Package(
             targets: ["AlgorithmGreedySelection"]
         ),
         .library(
+            name: "AlgorithmBacktracking",
+            targets: ["AlgorithmBacktracking"]
+        ),
+        .library(
             name: "AlgorithmHeap",
             targets: ["AlgorithmHeap"]
         ),
@@ -157,6 +161,10 @@ let package = Package(
         .target(
             name: "AlgorithmGreedySelection",
             path: "Sources/algorithm/pattern/greedy-selection"
+        ),
+        .target(
+            name: "AlgorithmBacktracking",
+            path: "Sources/algorithm/pattern/backtracking"
         ),
         .target(
             name: "AlgorithmHeap",
@@ -257,6 +265,11 @@ let package = Package(
             name: "AlgorithmGreedySelectionTests",
             dependencies: ["AlgorithmGreedySelection"],
             path: "Tests/algorithm/pattern/greedy-selection"
+        ),
+        .testTarget(
+            name: "AlgorithmBacktrackingTests",
+            dependencies: ["AlgorithmBacktracking"],
+            path: "Tests/algorithm/pattern/backtracking"
         ),
         .testTarget(
             name: "AlgorithmHeapTests",

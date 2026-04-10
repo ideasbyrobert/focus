@@ -78,6 +78,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 02-tabulation
       - 03-state-machine
     - greedy-selection
+    - backtracking
       
 ## reference
 
