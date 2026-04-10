@@ -40,6 +40,10 @@ let package = Package(
             name: "AlgorithmSortAndInterval",
             targets: ["AlgorithmSortAndInterval"]
         ),
+        .library(
+            name: "AlgorithmPrefixSum",
+            targets: ["AlgorithmPrefixSum"]
+        ),
     ],
     targets: [
         .target(
@@ -73,6 +77,10 @@ let package = Package(
         .target(
             name: "AlgorithmSortAndInterval",
             path: "Sources/algorithm/pattern/sort-and-interval"
+        ),
+        .target(
+            name: "AlgorithmPrefixSum",
+            path: "Sources/algorithm/pattern/prefix-sum"
         ),
         .testTarget(
             name: "CodeTourTests",
@@ -119,6 +127,11 @@ let package = Package(
             name: "AlgorithmSortAndIntervalTests",
             dependencies: ["AlgorithmSortAndInterval"],
             path: "Tests/algorithm/pattern/sort-and-interval"
+        ),
+        .testTarget(
+            name: "AlgorithmPrefixSumTests",
+            dependencies: ["AlgorithmPrefixSum"],
+            path: "Tests/algorithm/pattern/prefix-sum"
         ),
     ],
     swiftLanguageModes: [.v6]
