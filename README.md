@@ -86,7 +86,7 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - mathematics
       - 01-math-and-array
       - 02-math-and-bit
-      - 03-math-fluency
+      - 03-math-toolkit
       
 ## reference
 

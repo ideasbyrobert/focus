@@ -196,7 +196,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmMathFluency",
-            path: "Sources/algorithm/pattern/mathematics/03-math-fluency"
+            path: "Sources/algorithm/pattern/mathematics/03-math-toolkit"
         ),
         .target(
             name: "AlgorithmPriorityQueue",
@@ -321,7 +321,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmMathFluencyTests",
             dependencies: ["AlgorithmMathFluency"],
-            path: "Tests/algorithm/pattern/mathematics/03-math-fluency"
+            path: "Tests/algorithm/pattern/mathematics/03-math-toolkit"
         ),
         .testTarget(
             name: "AlgorithmPriorityQueueTests",
