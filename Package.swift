@@ -160,7 +160,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmRecursionAndBinaryTree",
-            path: "Sources/algorithm/pattern/recursion-and-binary-tree"
+            path: "Sources/algorithm/pattern/recursion/01-binary-tree"
         ),
         .target(
             name: "AlgorithmDivideAndConquer",
@@ -184,7 +184,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmBacktracking",
-            path: "Sources/algorithm/pattern/backtracking"
+            path: "Sources/algorithm/pattern/recursion/02-backtracking"
         ),
         .target(
             name: "AlgorithmMathAndBit",
@@ -276,7 +276,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmRecursionAndBinaryTreeTests",
             dependencies: ["AlgorithmRecursionAndBinaryTree"],
-            path: "Tests/algorithm/pattern/recursion-and-binary-tree"
+            path: "Tests/algorithm/pattern/recursion/01-binary-tree"
         ),
         .testTarget(
             name: "AlgorithmDivideAndConquerTests",
@@ -306,7 +306,7 @@ let package = Package(
         .testTarget(
             name: "AlgorithmBacktrackingTests",
             dependencies: ["AlgorithmBacktracking"],
-            path: "Tests/algorithm/pattern/backtracking"
+            path: "Tests/algorithm/pattern/recursion/02-backtracking"
         ),
         .testTarget(
             name: "AlgorithmMathAndBitTests",

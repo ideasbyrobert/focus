@@ -71,7 +71,9 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - sorting-and-two-pointer
     - sorting-and-interval
     - prefix-sum
-    - recursion-and-binary-tree
+    - recursion
+      - 01-binary-tree
+      - 02-backtracking
     - divide-and-conquer
     - binary-search
     - sliding-window
@@ -80,7 +82,6 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 02-tabulation
       - 03-state-machine
     - greedy-selection
-    - backtracking
     - math-and-array
     - math-and-bit
     - math-fluency
