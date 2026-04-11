@@ -8,35 +8,35 @@ public enum ReverseNodesInKGroup
         }
 
         let dummy = ListNode(0, next: head)
-        var groupPrevious: ListNode? = dummy
+        var nodeBeforeGroup: ListNode? = dummy
 
-        while let kthNode = kthNode(from: groupPrevious, taking: k)
+        while let groupEnd = findGroupEnd(startingAfter: nodeBeforeGroup, groupSize: k)
         {
-            let groupNext = kthNode.next
-            let groupStart = groupPrevious?.next
-            var previous = groupNext
-            var current = groupStart
+            let nodeAfterGroup = groupEnd.next
+            let groupHead = nodeBeforeGroup?.next
+            var nextReversedNode = nodeAfterGroup
+            var nodeBeingReversed = groupHead
 
-            while current !== groupNext
+            while nodeBeingReversed !== nodeAfterGroup
             {
-                let next = current?.next
-                current?.next = previous
-                previous = current
-                current = next
+                let next = nodeBeingReversed?.next
+                nodeBeingReversed?.next = nextReversedNode
+                nextReversedNode = nodeBeingReversed
+                nodeBeingReversed = next
             }
 
-            groupPrevious?.next = kthNode
-            groupPrevious = groupStart
+            nodeBeforeGroup?.next = groupEnd
+            nodeBeforeGroup = groupHead
         }
 
         return dummy.next
     }
 
-    private static func kthNode(from start: ListNode?, taking count: Int) -> ListNode?
+    private static func findGroupEnd(startingAfter: ListNode?, groupSize: Int) -> ListNode?
     {
-        var current = start
+        var current = startingAfter
 
-        for _ in 0..<count
+        for _ in 0..<groupSize
         {
             current = current?.next
 
