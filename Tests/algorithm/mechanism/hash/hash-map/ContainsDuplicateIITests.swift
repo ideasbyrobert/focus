@@ -24,3 +24,4 @@ final class ContainsDuplicateIITests: XCTestCase
         XCTAssertFalse(ContainsDuplicateII.solve([5, 1, 9, 3, 7, 4, 2, 8, 6, 1, 10, 11], within: 7))
     }
 }
+
