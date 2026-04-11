@@ -1,40 +1,40 @@
 public enum RotateList
 {
-    public static func solve(_ head: ListNode?, by steps: Int) -> ListNode?
+    public static func solve(_ head: ListNode?, by rotationCount: Int) -> ListNode?
     {
-        guard let head, steps > 0 else
+        guard let head, rotationCount > 0 else
         {
             return head
         }
 
-        var length = 1
-        var tail = head
+        var listLength = 1
+        var lastNode = head
 
-        while tail.next != nil
+        while lastNode.next != nil
         {
-            tail = tail.next!
-            length += 1
+            lastNode = lastNode.next!
+            listLength += 1
         }
 
-        let rotation = steps % length
+        let rotation = rotationCount % listLength
 
         if rotation == 0
         {
             return head
         }
 
-        tail.next = head
+        lastNode.next = head
 
-        var newTail: ListNode? = head
+        var rotatedTail: ListNode? = head
 
-        for _ in 0..<(length - rotation - 1)
+        for _ in 0..<(listLength - rotation - 1)
         {
-            newTail = newTail?.next
+            rotatedTail = rotatedTail?.next
         }
 
-        let newHead = newTail?.next
-        newTail?.next = nil
+        let rotatedHead = rotatedTail?.next
+        rotatedTail?.next = nil
 
-        return newHead
+        return rotatedHead
     }
 }
