@@ -87,6 +87,16 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 13-memory-safety
       - 14-error-handling
       - 15-assertions-and-preconditions
+    - basic-operators
+      - 01-terminology
+      - 02-assignment-operator
+      - 03-arithmetic-operators
+      - 04-compound-assignment-operators
+      - 05-comparison-operators
+      - 06-ternary-conditional-operator
+      - 07-nil-coalescing-operator
+      - 08-range-operators
+      - 09-logical-operators
       
 ## reference
 
