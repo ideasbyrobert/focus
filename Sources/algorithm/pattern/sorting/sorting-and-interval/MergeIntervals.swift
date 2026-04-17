@@ -1,13 +1,13 @@
 public enum MergeIntervals
 {
-    public static func solve(_ intervals: [[Int]]) -> [[Int]]
+    public static func solve(_ unsortedIntervals: [[Int]]) -> [[Int]]
     {
-        guard !intervals.isEmpty else
+        guard !unsortedIntervals.isEmpty else
         {
             return []
         }
 
-        let sortedIntervals = intervals.sorted
+        let intervalsSortedByStart = unsortedIntervals.sorted
         {
             if $0[0] != $1[0]
             {
@@ -17,17 +17,20 @@ public enum MergeIntervals
             return $0[1] < $1[1]
         }
 
-        var mergedIntervals: [[Int]] = [sortedIntervals[0]]
+        var mergedIntervals: [[Int]] = [intervalsSortedByStart[0]]
 
-        for interval in sortedIntervals.dropFirst()
+        for nextInterval in intervalsSortedByStart.dropFirst()
         {
-            if interval[0] <= mergedIntervals[mergedIntervals.count - 1][1]
+            let lastMergedIndex = mergedIntervals.count - 1
+            let currentMergedEnd = mergedIntervals[lastMergedIndex][1]
+
+            if nextInterval[0] <= currentMergedEnd
             {
-                mergedIntervals[mergedIntervals.count - 1][1] = max(mergedIntervals[mergedIntervals.count - 1][1], interval[1])
+                mergedIntervals[lastMergedIndex][1] = max(currentMergedEnd, nextInterval[1])
             }
             else
             {
-                mergedIntervals.append(interval)
+                mergedIntervals.append(nextInterval)
             }
         }
 
