@@ -32,8 +32,8 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
     - queue
     - tree
       - binary-tree
-        - iterative-traversal
-        - recursive-traversal
+        - queue-traversal
+        - stack-traversal
       - binary-search-tree
       - trie
     - graph
