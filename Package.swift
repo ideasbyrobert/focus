@@ -171,6 +171,7 @@ let package = Package(
         ),
         .target(
             name: "AlgorithmRecursionAndBinaryTree",
+            dependencies: ["AlgorithmTree"],
             path: "Sources/algorithm/mechanism/tree/binary-tree/stack-traversal"
         ),
         .target(
