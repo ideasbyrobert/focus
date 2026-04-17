@@ -1,21 +1,21 @@
 public enum DailyTemperatures
 {
-    public static func solve(_ temperatures: [Int]) -> [Int]
+    public static func solve(_ dailyTemperatures: [Int]) -> [Int]
     {
-        var result = Array(repeating: 0, count: temperatures.count)
-        var stack: [Int] = []
+        var daysUntilWarmerTemperature = Array(repeating: 0, count: dailyTemperatures.count)
+        var unresolvedDayIndices: [Int] = []
 
-        for index in temperatures.indices
+        for currentDayIndex in dailyTemperatures.indices
         {
-            while let lastIndex = stack.last, temperatures[index] > temperatures[lastIndex]
+            while let lastUnresolvedDayIndex = unresolvedDayIndices.last, dailyTemperatures[currentDayIndex] > dailyTemperatures[lastUnresolvedDayIndex]
             {
-                _ = stack.popLast()
-                result[lastIndex] = index - lastIndex
+                _ = unresolvedDayIndices.popLast()
+                daysUntilWarmerTemperature[lastUnresolvedDayIndex] = currentDayIndex - lastUnresolvedDayIndex
             }
 
-            stack.append(index)
+            unresolvedDayIndices.append(currentDayIndex)
         }
 
-        return result
+        return daysUntilWarmerTemperature
     }
 }

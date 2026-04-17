@@ -3,9 +3,19 @@ import XCTest
 
 final class DailyTemperaturesTests: XCTestCase
 {
+    func testHandlesEmptyInput()
+    {
+        XCTAssertEqual(DailyTemperatures.solve([]), [])
+    }
+
     func testHandlesCanonicalInput()
     {
         XCTAssertEqual(DailyTemperatures.solve([73, 74, 75, 71, 69, 72, 76, 73]), [1, 1, 4, 2, 1, 1, 0, 0])
+    }
+
+    func testHandlesEqualTemperaturesAsStillUnresolved()
+    {
+        XCTAssertEqual(DailyTemperatures.solve([70, 70, 71]), [2, 1, 0])
     }
 
     func testHandlesDecreasingTemperatures()
