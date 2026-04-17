@@ -3,9 +3,19 @@ import XCTest
 
 final class MinimumNumberOfArrowsToBurstBalloonsTests: XCTestCase
 {
+    func testHandlesEmptyInput()
+    {
+        XCTAssertEqual(MinimumNumberOfArrowsToBurstBalloons.solve([]), 0)
+    }
+
     func testHandlesCanonicalInput()
     {
         XCTAssertEqual(MinimumNumberOfArrowsToBurstBalloons.solve([[10, 16], [2, 8], [1, 6], [7, 12]]), 2)
+    }
+
+    func testHandlesTouchingBalloonsWithOneArrow()
+    {
+        XCTAssertEqual(MinimumNumberOfArrowsToBurstBalloons.solve([[1, 2], [2, 3], [3, 4]]), 2)
     }
 
     func testHandlesSeparatedBalloons()

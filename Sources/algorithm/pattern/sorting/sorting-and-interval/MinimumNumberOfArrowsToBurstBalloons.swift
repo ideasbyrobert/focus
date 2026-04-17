@@ -1,13 +1,13 @@
 public enum MinimumNumberOfArrowsToBurstBalloons
 {
-    public static func solve(_ balloons: [[Int]]) -> Int
+    public static func solve(_ unsortedBalloons: [[Int]]) -> Int
     {
-        guard !balloons.isEmpty else
+        guard !unsortedBalloons.isEmpty else
         {
             return 0
         }
 
-        let sortedBalloons = balloons.sorted
+        let balloonsSortedByEnd = unsortedBalloons.sorted
         {
             if $0[1] != $1[1]
             {
@@ -18,14 +18,14 @@ public enum MinimumNumberOfArrowsToBurstBalloons
         }
 
         var arrowCount = 1
-        var arrowPosition = sortedBalloons[0][1]
+        var currentArrowPosition = balloonsSortedByEnd[0][1]
 
-        for balloon in sortedBalloons.dropFirst()
+        for nextBalloon in balloonsSortedByEnd.dropFirst()
         {
-            if balloon[0] > arrowPosition
+            if nextBalloon[0] > currentArrowPosition
             {
                 arrowCount += 1
-                arrowPosition = balloon[1]
+                currentArrowPosition = nextBalloon[1]
             }
         }
 
