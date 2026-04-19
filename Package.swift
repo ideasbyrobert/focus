@@ -21,6 +21,10 @@ let package = Package(
             targets: ["CodeGuideBasicOperators"]
         ),
         .library(
+            name: "CodeGuideStringsAndCharacters",
+            targets: ["CodeGuideStringsAndCharacters"]
+        ),
+        .library(
             name: "AlgorithmArray",
             targets: ["AlgorithmArray"]
         ),
@@ -121,6 +125,10 @@ let package = Package(
         .target(
             name: "CodeGuideBasicOperators",
             path: "Sources/code/guide/basic-operators"
+        ),
+        .target(
+            name: "CodeGuideStringsAndCharacters",
+            path: "Sources/code/guide/strings-and-characters"
         ),
         .target(
             name: "AlgorithmArray",
@@ -234,6 +242,14 @@ let package = Package(
             name: "CodeGuideBasicOperatorsTests",
             dependencies: ["CodeGuideBasicOperators"],
             path: "Tests/code/guide/basic-operators",
+            resources: [
+                .copy("_support/Fixtures"),
+            ]
+        ),
+        .testTarget(
+            name: "CodeGuideStringsAndCharactersTests",
+            dependencies: ["CodeGuideStringsAndCharacters"],
+            path: "Tests/code/guide/strings-and-characters",
             resources: [
                 .copy("_support/Fixtures"),
             ]

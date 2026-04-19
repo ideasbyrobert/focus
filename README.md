@@ -97,6 +97,20 @@ make test CLASS=FindWinnerOnTicTacToeTests TEST=testFindsWinnerForB
       - 07-nil-coalescing-operator
       - 08-range-operators
       - 09-logical-operators
+    - strings-and-characters
+      - 01-string-literals
+      - 02-initializing-an-empty-string
+      - 03-string-mutability
+      - 04-strings-are-value-types
+      - 05-working-with-characters
+      - 06-concatenating-strings-and-characters
+      - 07-string-interpolation
+      - 08-unicode
+      - 09-counting-characters
+      - 10-accessing-and-modifying-a-string
+      - 11-substrings
+      - 12-comparing-strings
+      - 13-unicode-representations-of-strings
       
 ## reference
 

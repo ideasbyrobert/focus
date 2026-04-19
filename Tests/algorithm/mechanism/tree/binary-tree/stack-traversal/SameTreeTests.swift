@@ -11,6 +11,19 @@ final class SameTreeTests: XCTestCase
         XCTAssertTrue(SameTree.solve(first, second))
     }
 
+    func testHandlesBothEmptyTrees()
+    {
+        XCTAssertTrue(SameTree.solve(nil, nil))
+    }
+
+    func testRejectsDifferentValues()
+    {
+        let first = buildTree([1, 2, 3])
+        let second = buildTree([1, 2, 4])
+
+        XCTAssertFalse(SameTree.solve(first, second))
+    }
+
     func testRejectsDifferentShapes()
     {
         let first = buildTree([1, 2])
