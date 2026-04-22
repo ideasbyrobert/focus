@@ -16,21 +16,12 @@ public enum DiameterOfBinaryTree
             switch pendingTraversalFrame
             {
             case let .returnAfterChildren(node):
-                let leftSubtreeHeight = storedHeight(
-                    of: node.left,
-                    in: heightByNodeIdentifier
-                )
-                let rightSubtreeHeight = storedHeight(
-                    of: node.right,
-                    in: heightByNodeIdentifier
-                )
+                let leftSubtreeHeight = storedHeight(of: node.left, in: heightByNodeIdentifier)
+                let rightSubtreeHeight = storedHeight(of: node.right, in: heightByNodeIdentifier)
                 let diameterThroughNode = leftSubtreeHeight + rightSubtreeHeight
                 let nodeHeight = 1 + max(leftSubtreeHeight, rightSubtreeHeight)
 
-                maximumDiameterInEdges = max(
-                    maximumDiameterInEdges,
-                    diameterThroughNode
-                )
+                maximumDiameterInEdges = max(maximumDiameterInEdges, diameterThroughNode)
                 heightByNodeIdentifier[ObjectIdentifier(node)] = nodeHeight
 
             case let .arrive(node):
