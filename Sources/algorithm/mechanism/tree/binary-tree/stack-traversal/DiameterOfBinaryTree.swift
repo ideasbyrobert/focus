@@ -7,41 +7,66 @@ public enum DiameterOfBinaryTree
             return 0
         }
 
-        var maximumDiameter = 0
-        var depthByNodeIdentifier: [ObjectIdentifier: Int] = [:]
-        var pendingFrames: [(node: TreeNode, didVisitChildren: Bool)] = [(root, false)]
+        var maximumDiameterInEdges = 0
+        var heightByNodeIdentifier: [ObjectIdentifier: Int] = [:]
+        var pendingTraversalFrames: [TraversalFrame] = [.arrive(root)]
 
-        while let pendingFrame = pendingFrames.popLast()
+        while let pendingTraversalFrame = pendingTraversalFrames.popLast()
         {
-            if pendingFrame.didVisitChildren
+            switch pendingTraversalFrame
             {
-                let leftDepth = pendingFrame.node.left.map
+            case let .returnAfterChildren(node):
+                let leftSubtreeHeight = storedHeight(
+                    of: node.left,
+                    in: heightByNodeIdentifier
+                )
+                let rightSubtreeHeight = storedHeight(
+                    of: node.right,
+                    in: heightByNodeIdentifier
+                )
+                let diameterThroughNode = leftSubtreeHeight + rightSubtreeHeight
+                let nodeHeight = 1 + max(leftSubtreeHeight, rightSubtreeHeight)
+
+                maximumDiameterInEdges = max(
+                    maximumDiameterInEdges,
+                    diameterThroughNode
+                )
+                heightByNodeIdentifier[ObjectIdentifier(node)] = nodeHeight
+
+            case let .arrive(node):
+                pendingTraversalFrames.append(.returnAfterChildren(node))
+
+                if let rightChild = node.right
                 {
-                    depthByNodeIdentifier[ObjectIdentifier($0)] ?? 0
-                } ?? 0
-                let rightDepth = pendingFrame.node.right.map
+                    pendingTraversalFrames.append(.arrive(rightChild))
+                }
+
+                if let leftChild = node.left
                 {
-                    depthByNodeIdentifier[ObjectIdentifier($0)] ?? 0
-                } ?? 0
-
-                maximumDiameter = max(maximumDiameter, leftDepth + rightDepth)
-                depthByNodeIdentifier[ObjectIdentifier(pendingFrame.node)] = 1 + max(leftDepth, rightDepth)
-                continue
-            }
-
-            pendingFrames.append((pendingFrame.node, true))
-
-            if let rightChild = pendingFrame.node.right
-            {
-                pendingFrames.append((rightChild, false))
-            }
-
-            if let leftChild = pendingFrame.node.left
-            {
-                pendingFrames.append((leftChild, false))
+                    pendingTraversalFrames.append(.arrive(leftChild))
+                }
             }
         }
 
-        return maximumDiameter
+        return maximumDiameterInEdges
+    }
+
+    private static func storedHeight(
+        of node: TreeNode?,
+        in heightByNodeIdentifier: [ObjectIdentifier: Int]
+    ) -> Int
+    {
+        guard let node else
+        {
+            return 0
+        }
+
+        return heightByNodeIdentifier[ObjectIdentifier(node)] ?? 0
+    }
+
+    private enum TraversalFrame
+    {
+        case arrive(TreeNode)
+        case returnAfterChildren(TreeNode)
     }
 }
