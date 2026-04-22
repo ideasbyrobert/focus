@@ -10,9 +10,21 @@ final class DiameterOfBinaryTreeTests: XCTestCase
         XCTAssertEqual(DiameterOfBinaryTree.solve(root), 3)
     }
 
+    func testHandlesEmptyTree()
+    {
+        XCTAssertEqual(DiameterOfBinaryTree.solve(nil), 0)
+    }
+
     func testHandlesSingleNode()
     {
         XCTAssertEqual(DiameterOfBinaryTree.solve(buildTree([1])), 0)
+    }
+
+    func testHandlesSkewedTree()
+    {
+        let root = buildTree([1, 2, nil, 3, nil, nil, nil, 4])
+
+        XCTAssertEqual(DiameterOfBinaryTree.solve(root), 3)
     }
 
     func testHandlesLongDebugFriendlyTree()
