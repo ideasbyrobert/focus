@@ -3,6 +3,13 @@ import XCTest
 
 final class BSTIteratorTests: XCTestCase
 {
+    func testHandlesEmptyTree()
+    {
+        let iterator = BSTIterator(nil)
+
+        XCTAssertFalse(iterator.hasNext())
+    }
+
     func testHandlesCanonicalSequence()
     {
         let iterator = BSTIterator(buildTree([7, 3, 15, nil, nil, 9, 20]))
@@ -29,6 +36,19 @@ final class BSTIteratorTests: XCTestCase
         XCTAssertTrue(iterator.hasNext())
         XCTAssertEqual(iterator.next(), 1)
         XCTAssertFalse(iterator.hasNext())
+    }
+
+    func testHandlesLeftHeavyTree()
+    {
+        let iterator = BSTIterator(buildTree([3, 2, nil, 1]))
+        var values: [Int] = []
+
+        while iterator.hasNext()
+        {
+            values.append(iterator.next())
+        }
+
+        XCTAssertEqual(values, [1, 2, 3])
     }
 
     func testHandlesLongDebugFriendlyOperationSequence()
